@@ -1,0 +1,148 @@
+/* Basado en el trabajo de Yoelvis Mulen {code}
+    https://www.youtube.com/watch?v=xQstBIPeOdU
+*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: 'Ubuntu', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    padding: 70px 20px 0px 20px;
+}
+
+.header {
+    background-color: darkcyan;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* navBar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px; /* ancho obtenido de los breakpoints de bootstrap*/
+    margin: 0 auto o auto;
+}
+
+/* Enlaces de la navBar */
+.navLink {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 40px 0px 40px;
+    line-height: 60px;
+}
+
+/* mismo margen que el logo */
+.navMenu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+/* Items de la navbar */
+.navMenuItem {
+    font-size: 18px;
+    margin: 0px 10px 0px 10px;
+    line-height: 60px;
+    text-transform: capitalize;
+    width: max-content;    
+}
+
+/* Botones navbar */
+.navMenuLink {
+    padding: 8px 12px 8px 12px;
+    border-radius: 5px;    
+}
+
+/* Efectos de los botones navbar */
+.navMenuLink:hover {
+    background-color: blue;
+    transition: 0.5s;
+}
+
+.navMenuLinkActive {
+    background: none;
+    color:dodgerblue;
+ }
+
+/* botón alfajor */
+.navToggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0px 20px 0px 20px;
+    line-height: 40px;
+    cursor: pointer;
+    display: none; /* Oculto por defecto hasta ser mostrado cuando el ancho de pantalla sea menor a 769 px*/
+}
+/* Fin diseño para escritorio */
+
+/* Inicio diseño para celulares */
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .header {
+        height: 60px;
+    }
+    
+    .logo {
+        font-size: 30px;
+        padding: 0 20px 0 20px;
+        line-height: 60px;
+    }
+
+    .navMenu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: darkslategrey;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .navMenuItem {
+        line-height: 70px;
+        font-size: 30px;
+    }
+
+    .navMenuLink:hover {
+        background: none;
+        color:dodgerblue;
+    }
+
+    .navMenuLinkActive {
+        background: none;
+        color: dodgerblue;
+     }
+
+    /* Muestra botón alfajor */
+    .navToggle {
+        display: block;
+    }
+
+    .navMenuVisible {
+        left: 0;
+    }
+}

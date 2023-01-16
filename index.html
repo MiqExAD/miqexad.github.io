@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Proyecto Final</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/menubar.css">
+    <script src="https://kit.fontawesome.com/9bd0ba9e31.js" crossorigin="anonymous"></script> <!--Icono del alfajor-->
+    <script type="text/javascript" defer src="js/funciones.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"> <!-- Fuente Ubuntu -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"> <!-- Fuente Roboto -->
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+</head>
+<body>
+    <header class="header">
+        <!-- <h1 id="barraTitulo" align="center">Currículum Vitae</h1>-->
+        <nav class="nav">
+            <a href="#" class="logo navLink">CV</a>
+            <button class="navToggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="navMenu navMenuVisible">
+                <!-- *** Decidí que los datos personales estuviesen siempre visibles ***
+                <li class="navMenuItem">
+                    <a href="#seccionDatosPersonales" class="navMenuLink navLink" type="disable">Datos personales</a>
+                </li>
+                -->
+                <li class="navMenuItem">
+                    <a onclick="toggle_exp('seccionExperiencia');" id="showExp" href="#seccionExperiencia" class="navMenuLink navLink">Experiencia</a>
+                </li>
+                <li class="navMenuItem">
+                    <a onclick="toggle_hab('seccionHabilidades');" id="showHab" href="#seccionHabilidades" class="navMenuLink navLink">Habilidades</a>
+                </li>
+                <li class="navMenuItem">
+                    <a onclick="toggle_all();" id="showAll" class="navMenuLink navLink">Mostrar Todo</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="datosCV">
+        <div id="seccionDatosPersonales">
+            <h3 id="barraTitulo">Datos personales</h3>
+            <div class="listAndImage">
+                <div id="fotoPersonal">
+                    <img src="images/Foto-CV-RMe1.jpg" alt="Foto personal principal">
+                </div>
+                <div id="datosPersonales"> 
+                    <ul>
+                        <li id="cvNombre" class="dataIcons"> 
+                            <i class="fa-solid fa-person-simple"></i> Nombre: Luke KIM
+                        </li>
+                        <li id="cvEmail" class="dataIcons"> 
+                            E-Mail: luke.kim@example.com
+                        </li>
+                        <li id="cvFecNac" class="dataIcons"> 
+                            Edad: marzo 2, 1965
+                        </li>
+                        <li id="cvDireccion" class="dataIcons"> 
+                            Dirección: 282 West Sherman Drive
+                        </li>
+                        <li id="cvTelefono" class="dataIcons"> 
+                            Teléfono: (414) 848-8327
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="seccionExperiencia" class="infoCV">
+            <h3 id="barraTitulo">Experiencia laboral</h3>
+            <div id="actividadNH">
+                <h4 id="empresa">Empresa: Fundación NH</h4>
+                <h5 id="cuit">(CUIT XX-XXXXXXXX-X)</h5>
+                <h5 id="rubro">Rubro: Educación</h5>
+                <ul>
+                    <li id="items">Actividad: Dictado de clases de informática
+                        <br> Lugar: Escuela NSM
+                        <br> Desde: mayo 2009	    Continúa
+                    </li>
+                    <li id="items">Actividad: Dictado de clases mantenimiento y reparación de computadoras
+                        <br> Lugar: Escuela NSM
+                        <br> Desde: agosto 2009	    Continúa
+                    </li>
+                    <li id="items">Actividad: Encargado de mantenimiento laboratorio de informática
+                        <br> Lugar: Escuela NSM
+                        <br> Desde: abril 2009	    Continúa
+                    </li>
+                </ul>
+            </div>
+            <div id="actividadTP">
+                <h4 id="empresa">Empresa: Instituto TP</h4>
+                <h5 id="cuit">(CUIT YY-YYYYYYYY-Y)</h5> 
+                <h5 id="rubro">Rubro: Educación</h5>
+                <ul>
+                    <li id="items">Actividad: Dictado de clases armado y reparación de computadoras
+                        <br> Lugar: Fundación ISM
+                        <br> Desde: marzo 2011	    Continúa
+                    </li>
+                    <li id="items">Actividad: Encargado de mantenimiento salas de informática
+                        <br> Lugar: Fundación ISM
+                        <br> Desde: marzo 2011  	    Continúa
+                    </li>
+                </ul>
+            </div>
+            <div id="actividadBM">
+                <h4 id="empresa">Empresa: Bodega y Viñedos NN</h4>
+                <h5 id="cuit">(CUIT ZZ-ZZZZZZZZ-Z)</h5> 
+                <h5 id="rubro">Rubro: Vitivinícola</h5>
+                <p>Desde setiembre 1989 hasta mayo 2009 (baja: renuncia por motivos personales)</p>
+                <p>Responsabilidades</p>
+                <ul>
+                    <li id="items">
+                        Creación y puesta en marcha circuito informático de gestión administrativo-contable
+                    </li>
+                    <li id="items">
+                        Responsable de la programación, implementación y mantenimiento de los sistemas informáticos
+                    </li>
+                    <li id="items">
+                        Responsable administrativo del área de recursos humanos
+                    </li>
+                </ul>
+            </div>
+            <div id="actividadSI">
+                <h4 id="empresa">Actividad independiente: Servicios Informáticos</h4>
+                <h5 id="rubro">Rubro: Informática</h5>
+                <p>Desde 1990 Continúa</p>  
+                <ul>
+                    <li id="items">
+                        Particionamiento de "discos duros" (HDD/SSHD/SSD)
+                    </li>
+                    <li id="items">
+                        Instalación de sistemas operativos y aplicaciones
+                    </li>
+                    <li id="items">
+                        Recuperación de datos / Implementación políticas de seguridad
+                    </li>
+                    <li id="items">
+                        Diseño, implementación, mantenimiento y administración de redes informáticas
+                    </li>
+                    <li id="items">
+                        Diagnóstico y resolución problemas de software/hardware
+                    </li>
+                    <li id="items">
+                        Comunicación remota, uso de Discord, Meet, Webex, Teams y similares
+                    </li>
+                    <li id="items">
+                        Soporte técnico remoto, uso de RustDesk, AnyDesk, TeamViewer y similares
+                    </li>
+                    <li id="items">
+                        Instalación y configuración sistemas de cámaras de seguridad
+                    </li>  
+                </ul>
+            </div>
+        </div>
+        <div id="seccionHabilidades" class="infoCV">
+            <h3 id="barraTitulo">Habilidades</h3>
+            <h4 id="barraSubTitulo">Idiomas</h3>
+            <ul>
+                <li>
+                    Idioma inglés - Correcta lectura e interpretación</li>
+                </li>
+            </ul>
+            <h4 id="barraSubTitulo">Herramientas informáticas</h3>
+            <ul>
+                <li id="items">
+                    Sistemas operativos Windows/Linux/MacOS
+                </li>
+                <li id="items">
+                    Suites de oficina (Microsoft Office/OpenOffice/LibreOffice)
+                </li>
+                <li id="items">
+                    Herramientas de seguridad (Antivirus / Antimalware / Firewalls / Pentesting)
+                </li>
+                <li id="items">
+                    Herramientas de virtualización (VMware / ESXI / VirtualBOX)
+                </li>
+                <li id="items">
+                    Base de datos (FoxPro / Access / MySQL)
+                </li>
+                <li id="items">
+                    Sistemas de AFIP / Tango Gestión / Gescon / Exacta!
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <h5 id="final" href="mailto:miguel.aracena.d@gmail.com" text-align="center">
+            Autor: Miguel Aracena D.  *  (miguel.aracena.d@gmail.com)
+        </h5>
+    </footer>
+    <!-- Pasado al elemento head con el parámetro defer -->
+    <!-- <script type="text/javascript" src="js/funciones.js"></script> -->
+</body>
+</html>

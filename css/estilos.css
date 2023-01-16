@@ -1,0 +1,70 @@
+
+/* Estilo para titulos */
+#barraTitulo {
+    background-color: darkslategray;
+    color: white;
+    margin: 5px 0 5px 0;
+}
+
+#barraSubTitulo {
+    background-color: gray;
+    color: white;
+    margin: 5px 0 5px 0;
+}
+
+#empresa {
+    background-color: gray;
+    color: white;
+    margin: 5px 0 5px 0;
+}
+
+/* estilo para footer */
+#final {
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* tomado de 
+https://es.stackoverflow.com/questions/547458/
+como-puedo-poner-una-imagen-al-lado-de-una-lista-ya-sea-html-o-css
+*/
+.listAndImage {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* Fin https://es.stackoverflow.com/questions/547458/
+como-puedo-poner-una-imagen-al-lado-de-una-lista-ya-sea-html-o-css
+*/
+
+/* ocultar CUIT */
+#cuit {
+    display: none;
+}
+
+/* ocultas las secciones hasta que se cliquea en ellas
+*/
+
+.infoCV {
+    display: none;
+}
+
+/* oculta sección por id
+
+#seccionDatosPersonales {
+    display: none;
+}
+
+#seccionExperiencia {
+    display: none;
+}
+
+#seccionHabilidades {
+    display: none;
+}
+*/
